@@ -24,7 +24,7 @@ class Studenthalls(db.Model):
   
     
     
-@app.route("/readcsv")
+@app.route("/readcsv",)
 def readcsv():
     with open('Studenthalls.csv', 'r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
@@ -71,7 +71,18 @@ def findbyid():
     print(input)
     student=Studenthalls.query.filter_by(regno=input).first()   
     print(student) 
-    return str(student.hallname)
+    student={
+        "studentname":student.studentName,
+        "regno":student.regno,
+        "gender":student.gender,
+        "program":student.program,
+        "level":student.level,
+        "email":student.email,
+        "hallname":student.hallname
+    }
+    
+    return student
+
 
 
 if __name__ == '__main__':
