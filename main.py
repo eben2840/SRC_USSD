@@ -1,4 +1,4 @@
-from flask import Flask,redirect,url_for,render_template,request
+from flask import Flask,redirect,url_for,render_template,request,make_response
 import csv
 from flask_sqlalchemy import SQLAlchemy
 
@@ -71,6 +71,9 @@ def findbyid():
     print(input)
     student=Studenthalls.query.filter_by(regno=input).first()   
     print(student) 
+    
+    if student == None:
+        return make_response("no results found", 404)
     student={
         "studentname":student.studentName,
         "regno":student.regno,
