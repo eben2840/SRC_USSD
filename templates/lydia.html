@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   
+    <title>mytripghana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/blogg.css')}}">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+
+
+<body>
+ 
+  <main class="container">
+
+    <h1 class="heading">
+      <ion-icon name="cart-outline"></ion-icon>Lynaf  
+    </h1>
+
+    <div class="item-flex">
+
+      <!--
+       - checkout section
+      -->
+      <section class="checkout">
+        Cart Added 
+        <h2 class="section-heading">ConfirmPurchase</h2>
+
+        <div class="payment-form">
+
+         
+
+          <form action="" method="post">
+
+            <div class="cardholder-name">
+              <label for="cardholder-name" class="label-default">Name</label>
+              <input  name="srcname" id="cardholder-name" class="input-default" placeholder="Name" Required>
+            </div>
+
+            <div class="cardholder-name">
+              <label for="cardholder-name" class="label-default">Hostel</label>
+              <input  name="name" id="cardholder-name" class="input-default" placeholder="Hostel" Required>
+            </div>
+
+            <div class="card-number">
+              <label for="card-number" class="label-default">Phone Number</label>
+              <input  name="srcnumb"  class="input-default" placeholder="Phone Number" Required>
+            </div>
+
+            <div class="card-number">
+              <label for="card-number" class="label-default">Add to cart</label>
+              <input  name="sweat"  class="input-default" placeholder="Unit Quantity (eg.1)">
+            </div> 
+           
+           
+
+            <button type="submit" class="btn btn-primary">
+              
+                Done
+        
+            </button>
+          </form>
+
+        </div>
+
+
+      </section>
+
+
+      <!--
+        - cart section
+      -->
+
+    </div>
+
+  </main>
+
+
+
+ <!-- End Content -->
+
+  <!--
+    - custom js link
+  -->
+  <script src="./static/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

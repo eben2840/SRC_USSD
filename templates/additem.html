@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>mytripghana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/blogg.css')}}">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+
+
+<body>
+ 
+  <main class="container">
+
+    <h1 class="heading">
+      <ion-icon name="cart-outline"></ion-icon> POP-UP STORE
+    </h1>
+
+    <div class="item-flex">
+
+      <!--
+       - checkout section
+      -->
+      <section class="checkout">
+
+       <a href="#"> 
+          <div class="total">
+            <b><h3><span>Total</span> <span>Gh <span id="subtotal">0.0</span></span></h3></b>
+          </div></a>
+         
+       
+        <a href="/shop" style="color:#fff;"> <button class="btn btn-primary">
+          <div class="total">
+            <span >Confirm Order</span>
+          </div></a>
+         
+        </button>
+
+
+      </section>
+
+
+      <!--
+        - cart section
+      -->
+      <section class="cart">
+
+        <div class="cart-item-box">
+
+          <h2 class="section-heading">Order Summary</h2>
+
+          <div class="product-card">
+
+            <div class="card">
+
+              <div class="img-box">
+                <img src="/static/images/products/src/src1.jpg"  width="150px" class="product-img">
+              </div>
+
+              <div class="detail">
+
+                <h4 class="product-name">SWEAT SHIRT</h4>
+
+                <div class="wrapper">
+
+                  <div class="product-qty">
+                    <button id="decrement">
+                      <ion-icon name="remove-outline">-</ion-icon>
+                    </button>
+
+                    <span id="quantity">0</span>
+
+                    <button id="increment">
+                      <ion-icon name="add-outline">+</ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="price">
+                    Gh<span id="price">110.00</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <button class="product-close-btn">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+          <div class="product-card">
+
+            <div class="card">
+
+              <div class="img-box">
+                <img src="/static/images/products/src/src2.jpg" alt="Green tomatoes" width="150px" class="product-img">
+              </div>
+
+              <div class="detail">
+
+                <h4 class="product-name">Hoodie</h4>
+
+                <div class="wrapper">
+
+                  <div class="product-qty">
+                    <button id="decrement">
+                      <ion-icon name="remove-outline">-</ion-icon>
+                    </button>
+
+                    <span id="quantity">0</span>
+
+                    <button id="increment">
+                      <ion-icon name="add-outline">+</ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="price">
+                    Gh<span id="price">125.00</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <button class="product-close-btn">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+            </div>
+
+          </div><div class="product-card">
+
+            <div class="card">
+
+              <div class="img-box">
+                <img src="/static/images/products/src/src3.jpg" alt="Green tomatoes" width="150px" class="product-img">
+              </div>
+
+              <div class="detail">
+
+                <h4 class="product-name">Bag</h4>
+
+                <div class="wrapper">
+
+                  <div class="product-qty">
+                    <button id="decrement">
+                      <ion-icon name="remove-outline">-</ion-icon>
+                    </button>
+
+                    <span id="quantity">0</span>
+
+                    <button id="increment">
+                      <ion-icon name="add-outline">+</ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="price">
+                    Gh<span id="price">50.00</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <button class="product-close-btn">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="product-card">
+
+            <div class="card" >
+
+              <div class="img-box"  style="display:flex;">
+                <img src="/static/images/products/src/src4.jpg" alt="Cabbage" width="150px" class="product-img"> 
+                
+               
+              </div>
+
+              <div class="detail">
+
+                <h4 class="product-name">T-shirt</h4>
+
+                <div class="wrapper">
+
+                  <div class="product-qty">
+                    <button id="decrement">-
+                      <ion-icon name="remove-outline">-</ion-icon>
+                    </button>
+
+                    <span id="quantity">0</span>
+
+                    <button id="increment">
+                      <ion-icon name="add-outline">+</ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="price">
+                    Gh <span id="price">50</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <button class="product-close-btn">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="wrapper">
+
+        
+
+
+         
+
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+
+ <!-- End Content -->
+
+  <!--
+    - custom js link
+  -->
+  <script src="./static/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

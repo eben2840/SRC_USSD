@@ -1,0 +1,307 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0, minimum-sale=1" />
+    <title>mytripghana</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/venue.css')}}">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="venue.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <script>
+      AOS.init();
+    </script>
+    <nav class="navbar">
+      <div class="navbar-container container">
+          <input type="checkbox" name="" id="">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+            
+            <li><a href="/home">Trips</a></li>
+              <li><a href="/hotel">Hotel</a></li>
+            
+            
+              <li><a href="/signinn">My Account</a></li>
+             
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/event">Events</a></li>
+              <li><a href="/about">Shopping</a></li>
+             
+              <li><a href="/security  "><b>Rental Cars</b></a></li>
+              <li><a href="/security  "><b>Flights</b></a></li>
+              <li><a href="/security  "><b>Vacation Pacakages</b></a></li>
+            
+           
+                
+         
+          </ul>
+          
+          <h1 class="logo" style=" font-family:Verdana, Geneva, Tahoma, sans-serif;  font-size: 3vh; margin-top:10px"> <i class="fas fa-search-location"  style="width:10px; height:10px;"  ></i> <a href="/home" style="text-decoration:none; color:#094b65;">MyTripGhana</a></h1>
+        </div>
+  </nav>
+  <section class="showcase-area" id="showcase" data-aos="fade-up"
+  data-aos-duration="1000">
+  
+    <div class="showcase-container"style="box-shadow:0 2px 10px -3px #117964; " >
+      <h1 class="main-title" id="home" style="color:#fff;">Get out there today.</h1>
+      
+        <p style="color:#fff; text-align:center">  
+          <form >
+            <input type="text" class="fas fa-search-location" style="border-radius: 40px; text-align:center; box-shadow: 0 2px 10px -3px #117964;
+          width: 100%;
+          height: 50px;
+          margin: 10px auto 2px ;
+          border: 1px solid #D9D9D9;"class="btn btn-primary" id="validationCustomUsername" aria-describedby="inputGroupPrepend"  placeholder="Find tours, activities and more" required>
+          
+          <div class="invalid-feedback">   <button class="btn" style="color: #fff; background: #117964;  height:35px; border-radius:10 px; margin-left: 2vw;align:center;" type="submit"><i class="fas fa-search-location" style="align:center;"></i> </button>
+           
+              
+          </form>  
+
+      
+    </div>
+  </section>
+    
+
+    <section id="food-menu" data-aos="fade-up"
+    data-aos-duration="3000">
+      <h2 class="food-menu-heading">Restaurants</h2>
+      <div class="food-menu-container container">
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://i.postimg.cc/HL8S8qnq/k.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile"> Bôndai Restaurant & Bar</h2>
+            <p>#No13<br>
+             A restaurant, specializing in healthy Mediterranean and Asian food.
+            <p class="food-price">Price:GHS 25 - GHS 900</p>
+            <a
+                href="/form"
+                class="btn btn-primary"
+                target="blank"
+                >Directions</a
+              >
+          </div>
+        </div>
+
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img
+              src="https://i.postimg.cc/Zn2jVjW9/tt.jpg"
+              alt="error"
+            />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Bloombar</h2>
+            <p>#No11<br>
+              31 of 42 Bars in Accra<br>  
+              196 of 302 Restaurants in Accra
+            <p class="food-price">Price:GHS 10 - GHS 850</p>
+            <a
+                href="https://www.instagram.com/bloombargh/"
+                class="btn btn-primary"
+                target="blank"
+                >learn more</a
+              >
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://i.postimg.cc/XqrXnkQk/jjj.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Dima3nsa</h2>
+            <p>#No16<br>
+              BAR • GRILL • LOUNGE
+              11:00 AM - 11:00 PM
+              MONDAY TO SUNDAY
+            </p>
+            <p class="food-price">Price:GHS 15 - GHS 100</p>
+            <a
+                href="https://www.instagram.com/dimaensa_/"
+                class="btn btn-primary"
+                target="blank"
+                >Explore More</a
+              >
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://media.timeout.com/images/102870563/750/422/image.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">TimeOut</h2>
+            <p>#No27<br>
+              Located in the hip, creative, and entrepreneurial enclave around Osu Ako Adjei Park
+            </p>
+            <p class="food-price">Price: GHS 15 - GHS 100</p>
+            <a
+                href="https://www.timeout.com/accra/restaurants"
+                class="btn btn-primary"
+                target="blank"
+                >Explore More</a
+              >
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-p/1c/00/1c/81/photo0jpg.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">
+              Organic food cafe</h2>
+            <p>#No47<br>
+              Market, Top Floor Rebublic Bank, Madina<br>
+              
+              .10:00AM - 8:30PM
+              
+            </p>
+            <p class="food-price">Price:GHS 15 - GHS 100</p>
+            <a
+                href="https://en.wikipedia.org/wiki/Grain"
+                class="btn btn-primary"
+                target="blank"
+                >learn more</a
+              >
+          </div>
+        </div>
+
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://viennacity.com.gh/wp-content/uploads/2022/08/VC_NIGHTCLUB_CIRCLE__F9A7674.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Vienna city</h2>
+            <p>#No29<br>
+              located at Kwame Nkrumah Circle opposite G.C.B Tower next to the Barclays Bank.
+            </p>
+            <p class="food-price">Price:GHS 50 - GHS 850</p>
+            <a
+                href="https://viennacity.com.gh/accra/"
+                class="btn btn-primary"
+                target="blank"
+                >Explore More</a
+              >
+          </div>
+        </div>
+         <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/a6/7b/8c/photo5jpg.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Asanka Local
+            </h2>
+            <p>
+             #No74<br>
+              African, Soups
+              Lunch, Dinner
+            </p>
+            <p class="food-price">Price:GHS 10 - GHS 200</p>
+            <a
+                href="https://maps.google.com/maps?saddr=&daddr=18th+Lane+Osu%2C+Accra+Ghana@5.56117,-0.18007"
+                class="btn btn-primary"
+                target="blank"
+                >Directions</a
+              >
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://i.postimg.cc/NGK1s6yn/jj.jpg" alt="" />
+          </div>
+
+          <div class="food-description">
+            <h2 class="food-titile">Bosphorus</h2>
+            <p>
+              #No32<br>
+              Turkish, Middle Eastern
+SPECIAL DIETS:<br>
+Halal, Vegetarian Friendly
+    </p>
+            <p class="food-price">Price:GHS 45 - GHS 300</p>
+            <a
+                href="https://maps.google.com/maps?saddr=&daddr=Labone+Ndabaningi+Sithole+Avenue%2C+Near+Coffee+shop%2C+Labone%2C+Accra+094522+Ghana@5.569844,-0.168802"
+                class="btn btn-primary"
+                target="blank"
+                >Directions</a
+              >
+          </div>
+        </div>
+      </div>
+      <div class="More">
+              
+      </div>
+      <section id="contact"data-aos="fade-up"
+      data-aos-duration="1000">
+        <div class="contact-container container" style="box-shadow:0 2px 10px -3px #117964; ">
+          <div class="contact-img">
+            <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg"  style="border-radius:10px; height:250px;"alt="" />
+          </div>
+          <div class="about-wrapper container">
+            <div class="about-text">
+              <p class="small">Take a trip with us. </p>
+              <h2>We've Got You All Covered</h2>
+              <p>
+                MytripGhana.com is a rapidly-growing global online company, We are here to help you plan the perfect trip. Whether you're going on holiday, taking a business trip, or looking to set up a corporate travel account here in Ghana, MytripGhana.com is here to help you travel through Ghana at ease.<br><br>
+              </br></br></br>
+              <ul class="social">
+                <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a>
+                <a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a>
+                <a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+              </ul>
+              </p>
+              
+            </div>
+      
+        
+       
+        </section>
+	           
+      <i class="fas fa-copyright" style="margin-left:60px; margin-top:40px">copyright MyTripGhana 2022 Created by Kalitex Creatives</i> </body>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+  
+            // Store hash
+            var hash = this.hash;
+  
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 

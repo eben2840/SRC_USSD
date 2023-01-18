@@ -1,0 +1,1953 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0, minimum-sale=1" />
+    <title>mytripghana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/venue.css')}}">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="venue.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    
+    <script>
+      AOS.init();
+    </script>
+    {% for message in get_flashed_messages()%}
+        
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      {{message}}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+   
+ 
+  {% endfor %}
+
+    <nav class="navbar">
+
+      <div class="navbar-container container">
+          <input type="checkbox" name="" id="">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+            <li><a href="/home">Trips</a></li>
+              <li><a href="/hotel">Hotel</a></li>
+              <li><a href="/signinn">My Account</a></li>
+              <li><a href="/restaurant">Restaurants</a></li>
+              <li><a href="/event">Events</a></li>
+              <li><a href="/centralmall">Shopping</a></li>
+              <li><a href="/security"><b>Rental Cars</b></a></li>
+              <li><a href="/security"><b>Flights</b></a></li>
+              <li><a href="/security"><b>Vacation Pacakages</b></a></li>
+            
+           
+              
+         
+          </ul>
+          
+             <h1 class="logo" style=" font-family:Verdana, Geneva, Tahoma, sans-serif;  font-size: 3vh; margin-top:10px"> <i class="fas fa-search-location"  style="width:10px; height:10px;"  ></i> <a href="/home" style="text-decoration:none; color:#094b65;">MyTripGhana</a></h1>
+      </div>
+  </nav>
+  
+    <section class="showcase-area" id="showcase" data-aos="fade-up"
+    data-aos-duration="1000">
+    
+      <div class="showcase-container"style="box-shadow:0 2px 10px -3px #117964; " >
+        
+        <p style="color:#fff; text-align:center">  
+          <form >
+            <h1 class="main-title" id="home" style="color:#fff;">Get out there today.</h1>
+            <input type="text" class="fas fa-search-location" style="border-radius: 40px; text-align:center; box-shadow: 0 2px 10px -3px #117964;
+          width: 100%;
+          height: 50px;
+          margin: 10px auto 2px ;
+          border: 1px solid #D9D9D9;"class="btn btn-primary" id="validationCustomUsername" aria-describedby="inputGroupPrepend"  placeholder="Find tours, activities and more" required>
+          
+          <div class="invalid-feedback">   <button class="btn" style="color: #fff; background: #117964;  height:35px; border-radius:10 px; margin-left: 2vw;align:center;" type="submit"><i class="fas fa-search-location" style="align:center;"></i> </button>
+           
+              
+          </form>  
+        
+      </div>
+    </section>
+  
+ 
+  
+ 
+
+ <img src="https://i.postimg.cc/HL8S8qnq/k.jpg" style="box-shadow:0 2px 10px -3px #117964; margin-top:20px;  border-radius:50%; height:35px; width:35px; float:left; margin-bottom:10px; "alt="" />
+ <h2 class="food-titile" style="text-align:left;margin-top:20px; ">#Most Tagged <i class="fas fa-tablet-rugged    "></i> </h2><h4 style="text-align:left;">#Restaurant & Bar</h4>
+
+
+ <sectio data-aos="fade-down"
+ data-aos-easing="linear"
+ data-aos-duration="500" style=" height:60vh;" >
+   <div class="product" style=" height:30vh; object-fit:cover; width:30vh;  ">
+     <picture>
+       <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Sky+Bar+25+Restaurant+and+Bar,+N+16+N+Airport+Rd,+Accra/@5.6979309,-0.187467,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9b0dedfd9c33:0x5631471f9ad654e7!2m2!1d-0.1771188!2d5.6200183!3e0?hl=en"><img src="https://images.squarespace-cdn.com/content/v1/57a491e5cd0f687001710147/1475007830921-EUHN6MU6QQPGHHQPUUH5/IMG_0488.jpg"  style=" height:30vh; object-fit:cover; " alt=""></a>
+     </picture>
+     <div class="detail">
+       
+       <h2><b>  Skybar
+        
+       
+         </b></h2>
+          Accra’s premier rooftop venue with breathtaking views of the city.
+          <div class="star-rating" style="color:orange; margin-top:2px;">
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+         </div>
+     
+        
+          <a 
+          href=""
+          class="btn btn-primary"
+          target="blank"
+          >   <h3 style="align:center;">  </i>
+             
+            GH₵ 195.00</h3></a
+        >			
+ </div>
+   
+   </div>
+   <div class="product" style=" height:30vh; object-fit:cover;  width:30vh;  ">
+     <picture>
+       <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/No.+X+Restaurant+%26+Lounge,+Dade+St,+Accra/@5.6751425,-0.1177597,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9b173ecc6f1b:0xf7fe3df7734f97b3!2m2!1d-0.1727039!2d5.5738452!3e0?hl=en"><img src="https://mamestastes.files.wordpress.com/2020/09/img_4288.jpg"  style=" height:30vh; object-fit:cover; " alt=""></a>
+     </picture>
+     <div class="detail">
+       
+       <h2><b>  No.x
+        
+       
+         </b></h2>
+         French, International, European
+         <div class="star-rating" style="color:orange; margin-top:2px;">
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+         </div>
+   
+         <a 
+         href=""
+         class="btn btn-primary"
+         target="blank"
+         >   <h3 style="align:center;">  </i>
+            
+           GH₵ 121.00</h3></a
+       >			
+ </div>
+   
+   </div> <div class="product" style=" height:30vh; object-fit:cover; width:30vh;    ">
+     <picture>
+       <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/AmPm,+16+N+Airport+Rd,+Accra/@5.6981144,-0.1174211,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9b12085a8e3d:0xebb1f85a0f3d536e!2m2!1d-0.1772535!2d5.6200311!3e0?hl=en"><img src="https://lh3.googleusercontent.com/p/AF1QipMNXvyESlQoSCGPlJZdJ-A1KMREIjDtI-_6gOqA=w1080-h608-p-k-no-v0"  style=" height:30vh; object-fit:cover; " alt=""></a>
+     </picture>
+     <div class="detail">
+       
+       <h2><b>  Am & Pm
+        
+       
+         </b></h2>
+         9 reviews# 99 of 301 Restaurants in Accra<br>
+         <div class="star-rating" style="color:orange; margin-top:2px;">
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+         </div>
+         <a 
+         href=""
+         class="btn btn-primary"
+         target="blank"
+         >   <h3 style="align:center;">  </i>
+            
+           GH₵ 181.00</h3></a
+       >			
+ </div>
+   
+   </div> 
+  
+
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+<a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Imperial+Peking+Chinese+Restaurant,+MXGH%2BQ84,+Tema/@5.7261405,-0.004261,13z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf80ed8ee60695:0x866d1fb225eeaf11!2m2!1d-0.0216799!2d5.6768867!3e0?hl=en"  style=" height:30vh; object-fit:cover; " alt=""></a>
+</picture>
+<div class="detail">
+ 
+ <h2><b>  Imperial Peking
+  
+ 
+   </b></h2>
+   Dinner, Lunch. Takeout, Reservations, Table Service, Private Dining
+   <div class="star-rating" style="color:orange; margin-top:2px;">
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+   
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+   </div>
+   <a 
+   href=""
+   class="btn btn-primary"
+   target="blank"
+   >   <h3 style="align:center;">  </i>
+      
+     GH₵ 91.00</h3></a
+ >				
+</div>
+
+</div>
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+<a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/The+Grillroom,+Accra/@5.6761348,-0.1217033,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9a89a292d1cf:0x7d04b9a5ebbb13a0!2m2!1d-0.1850054!2d5.576066!3e0?hl=en"> <img src="https://media-cdn.tripadvisor.com/media/photo-s/16/a9/ed/8a/panfried-salmon.jpg"  style=" height:30vh; object-fit:cover; " alt=""></a>
+</picture>
+<div class="detail">
+ 
+ <h2><b>  The Grillroom
+  
+ 
+   </b></h2>
+   Seafood, Barbecue, Grill, Contemporary<br>
+   <div class="star-rating" style="color:orange; margin-top:2px;">
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+   </div>
+   <a 
+   href=""
+   class="btn btn-primary"
+   target="blank"
+   >   <h3 style="align:center;">  </i>
+      
+     GH₵ 191.00</h3></a
+ >			
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+<a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Indulge+Accra,+Plot+No,+54+Dade+St,+Accra/@5.6762054,-0.1177597,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9bf6fff75d17:0x263d4b97500a3542!2m2!1d-0.1726219!2d5.5762988!3e0?hl=en">  <img src="https://media-cdn.tripadvisor.com/media/photo-s/21/b4/d8/36/dine-in-area.jpg"  style=" height:30vh; object-fit:cover; " alt=""></a>
+</picture>
+<div class="detail">
+ 
+ <h2><b> Indulge
+  
+ 
+   </b></h2>
+   Outdoor Seating, Reservations, Private Dining, Parking Available.
+   <div class="star-rating" style="color:orange; margin-top:2px;">
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+   </div>
+
+   <a 
+   href=""
+   class="btn btn-primary"
+   target="blank"
+   >   <h3 style="align:center;">  </i>
+      
+     GH₵ 151.00</h3></a
+ >			
+</div>
+
+</div>
+
+
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+<a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Bistro+22+-+Kitchen+%2B+Bar,+Ndabaningi+Sithole+Rd,+Accra/@5.6734935,-0.1174211,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9a981782c295:0x954f78a80024aa46!2m2!1d-0.1691016!2d5.5715661!3e0?hl=en"> <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/4b/3f/bc/wine-shelf-and-bar.jpg"  style=" height:30vh; object-fit:cover; " alt=""></a>
+</picture>
+<div class="detail">
+ 
+ <h2><b>  Bisto 22
+  
+ 
+   </b></h2>
+   Vegetarian Friendly, Vegan Options
+   <div class="star-rating" style="color:orange; margin-top:2px;">
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+    
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+   </div>
+
+   <a 
+   href=""
+   class="btn btn-primary"
+   target="blank"
+   >   <h3 style="align:center;">  </i>
+      
+     GH₵ 132.00</h3></a
+ >			
+</div>
+
+</div>
+
+
+
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+ <a href ="https://maps.google.com/maps?saddr=&daddr=North+Airport+Road+Azure%2C+Villaggio+Vista%2C+East+Dzorwulu%2C+Accra+Ghana@5.620005,-0.179347"><img src="https://media-cdn.tripadvisor.com/media/photo-s/11/0b/8e/18/sashimi.jpg"  style=" height:30vh; object-fit:cover; " alt=""></a>
+</picture>
+<div class="detail">
+ 
+ <h2><b>  Santoku
+  
+ 
+   </b></h2>
+   Japanese, Sushi, Vegetarian Friendly, Vegan Options, Gluten Free Options 
+   <div class="star-rating" style="color:orange; margin-top:2px;">
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+    
+     <span class="fa fa-star checked"></span>
+   </div>
+
+   <a 
+   href=""
+   class="btn btn-primary"
+   target="blank"
+   >   <h3 style="align:center;">  </i>
+      
+     GH₵ 161.00</h3></a
+ >				
+</div>
+
+</div>
+
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+<a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Shogun,+Fourth+Circular+Rd,+Accra/@5.6769522,-0.1174211,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9b88471ba6c7:0xf924628396c3886f!2m2!1d-0.1720614!2d5.577685!3e0?hl=en">  <img src="https://afiaghana.com/wp-content/uploads/2022/03/shogun_japanese-location.jpg" style=" height:30vh; object-fit:cover; alt="></a>
+</picture>
+<div class="detail">
+ 
+ <h2><b>  Shogun
+  
+ 
+   </b></h2>
+   Barbecue, Sushi, Asian, Korean, Japanese<br>
+   <div class="star-rating" style="color:orange; margin-top:2px;">
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     
+     <span class="fa fa-star checked"></span>
+   </div>
+   <a 
+   href=""
+   class="btn btn-primary"
+   target="blank"
+   >   <h3 style="align:center;">  </i>
+      
+     GH₵ 121.00</h3></a
+ >			
+</div>
+
+</div>
+
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+<a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/BELLA+AFRIK,+Liberation+Rd,+Accra/@5.6758638,-0.1229718,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9b885dfa8235:0xd79574593e022e2e!2m2!1d-0.1890069!2d5.5752877!3e0?hl=en"> <img src="https://media-cdn.tripadvisor.com/media/photo-s/1d/a8/a1/36/caption.jpg"  style=" height:30vh; object-fit:cover; " alt=""></a>
+</picture>
+<div class="detail">
+ 
+ <h2><b>  Bella Afrique
+  
+ 
+   </b></h2>
+    Takeout, Wheelchair Accessible
+    <div class="star-rating" style="color:orange; margin-top:2px;">
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+    
+     <span class="fa fa-star checked"></span>
+   </div>
+
+    <a 
+    href=""
+    class="btn btn-primary"
+    target="blank"
+    >   <h3 style="align:center;">  </i>
+       
+      GH₵ 230.00</h3></a
+  >			
+</div>
+
+</div>
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+<a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/The+Republic+Bar+%26+Grill,+Asafoatse+Tempong+St,+Accra/@5.6687013,-0.1236235,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9075a6cfa2c3:0x638975235b83001c!2m2!1d-0.1833361!2d5.5610847!3e0?hl=en"> <img src="https://media-cdn.tripadvisor.com/media/photo-s/02/c8/18/dd/getlstd-property-photo.jpg"  style=" height:30vh; object-fit:cover; " alt=""></a>
+</picture>
+<div class="detail">
+ 
+ <h2><b>  The Republic Bar & Grill
+
+  
+ 
+   </b></h2>
+   Bar, Pub, African, Fusion
+   <div class="star-rating" style="color:orange; margin-top:2px;">
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+   
+     <span class="fa fa-star checked"></span>
+   </div>
+
+   <a 
+   href=""
+   class="btn btn-primary"
+   target="blank"
+   >   <h3 style="align:center;">  </i>
+      
+     GH₵ 45.00</h3></a
+ >			
+</div>
+
+</div>
+
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+<a href="https://www.google.com/maps/uv?pb=!1s0xfdf9abe9c0265a3%3A0xaab506609e926531!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOaLaci-Ij-BWX4Xy3DWCVt-ExMjEjn2ugkbJCn%3Dw86-h87-n-k-no!5sCapitol%20-%20Manema%20ta%20Google!15sCgIgAQ&imagekey=!1e10!2sAF1QipOaLaci-Ij-BWX4Xy3DWCVt-ExMjEjn2ugkbJCn&hl=ha&sa=X&ved=2ahUKEwiH8YCcg7P6AhXkQvEDHSTdDeEQ7ZgBKAN6BAgVEAU#"><img src="https://www.coupons.com.gh/attachments/e94effea47280fe86b4a716df0154055ab51351f/store/fill/1000!/600!/510a69863e1b1f244a8703cfc1de6d3293765c3f2b35377d705eb7bc5822/22.11.17-CapitolGrandOpeningCeremony-30199.jpg" style=" height:30vh; object-fit:cover; " alt=""></a>
+</picture>
+<div class="detail">
+ 
+ <h2><b> Capitol Cafe & Restaurant
+  
+ 
+   </b></h2>
+   Cafe, European, Turkish, Grill,Vegetarian.<br>
+   <div class="star-rating" style="color:orange; margin-top:2px;">
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+   </div>
+   <a 
+   href=""
+   class="btn btn-primary"
+   target="blank"
+   >   <h3 style="align:center;">  </i>
+      
+     GH₵ 222.00</h3></a
+ >			
+</div>
+
+</div>
+
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+<a href="https://www.tripadvisor.com/Restaurant_Review-g293797-d12237094-Reviews-Mama_Cuisine-Accra_Greater_Accra.html#MAPVIEW">  <img src="https://media-cdn.tripadvisor.com/media/photo-s/16/90/be/4c/bar.jpg"  style=" height:30vh; object-fit:cover; " alt=""></a>
+</picture>
+<div class="detail">
+ 
+ <h2><b>  Mama Cuisine
+  
+ 
+   </b></h2>
+   African, Barbecue, Grill, Vegetarian.
+   <div class="star-rating" style="color:orange; margin-top:2px;">
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+    
+     <span class="fa fa-star checked"></span>
+   </div>
+
+ 
+   <a 
+   href=""
+   class="btn btn-primary"
+   target="blank"
+   >   <h3 style="align:center;">  </i>
+      
+     GH₵ 81.00</h3></a
+ >	
+</div>
+
+  </div>
+
+</sectio>
+
+
+    <img src="https://i.postimg.cc/HL8S8qnq/k.jpg" style="box-shadow:0 2px 10px -3px #117964; border-radius:50%; height:35px; width:35px; float:left; margin-bottom:10px; margin-top:20px; "alt="" />
+            <h2 class="food-titile" style="text-align:left; margin-top:20px; "> #Top Cities</h2><h4 style="text-align:left;">#Travel</h4>
+          
+    <sectio data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1000">
+      <div class="product">
+				<picture>
+					<img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSD8GqFtIoH5OZTluObEPgUgpNeANXBv--x1O3TXw9wLlNJKQG1G4R5Phkf9onZWrPixCYsEMLTHMKcWwY2yGuzehV3-w&s=19" alt="">
+				</picture>
+
+				<div class="detail">
+					
+          <h2><b>  Elmina
+           
+          
+            </b></h2>
+            Castle, fishing, lagoon, tarihi, da beach
+        
+            <a 
+            href=""
+            class="btn btn-primary"
+            target="blank"
+            >   
+          <h3>  <i class="fas fa-bed ">  </i>
+               
+              GH₵ 106.00</h3></a
+          >					
+    </div>
+			
+			</div>
+      <div class="product">
+				<picture>
+					<img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTIRJv8FnKqx6C-zaa3Ip9Urt3vsEkqJxAQmAkyZVqmCBJf6Q2LROksnIbAwS_nh-KLv0dkpb7jMqPtPhpo-mMVtED6Dg&s=19" alt="">
+				</picture>
+				<div class="detail">
+					
+          <h2><b>
+            Mole National Park
+           
+          
+           
+         
+            </b></h2>
+            Mashaƙata, safari, giwa, game reserve
+            <a 
+            href=""
+            class="btn btn-primary"
+            target="blank"
+            >   
+          <h3>  <i class="fas fa-bed ">  </i>
+               
+              GH₵ 101.00</h3></a
+          >					
+    </div>
+			
+			</div>
+        
+			<div class="product">
+				<picture>
+					<img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRxU_OrUW8nREGb2xZyB09OUeqO56z_akJU6QehoznvXDxH2x-6LihlkdHDtzZhTcrAauUASQyuOlCdNHOl1K-IOHAglg&s=19" alt="">
+				</picture>
+				<div class="detail">
+					
+          <h2><b>  Kokrobite
+           
+            
+            </b></h2>
+            Beach da surfing,swimming.
+            <a 
+            href=""
+            class="btn btn-primary"
+            target="blank"
+            >   
+          <h3>  <i class="fas fa-bed ">  </i>
+               
+              GH₵ 281.00</h3></a
+          >					
+    </div>		
+      </div>
+      
+
+			<div class="product">
+				<picture>
+          <img src="data:image/jpeg;base64,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" alt="error" />
+       
+				</picture>
+				<div class="detail">
+					
+          <h2><b> Kakum National Park
+            
+          
+           
+            
+            </b></h2>
+            Mashaƙata, rainforest, birdwatching, protected area, da daji  
+           
+        
+            <a 
+            href=""
+            class="btn btn-primary"
+            target="blank"
+            >   
+          <h3>  <i class="fas fa-bed ">  </i>
+               
+              GH₵ 161.00</h3></a
+          >						
+    </div>
+			
+			</div>
+			<div class="product">
+				<picture>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdalqAEUTCSM7D8GJkYx90xwHh4LIajqiL84PbOAILpsaHs1pnQ6IAvIS0&s=8" alt="">
+				</picture>
+				<div class="detail">
+					
+          <h2><b>  Takoradi
+           
+            
+            </b></h2>
+            Harbor da beach <br>
+            <a 
+            href=""
+            class="btn btn-primary"
+            target="blank"
+            >   
+          <h3>  <i class="fas fa-bed ">  </i>
+               
+              GH₵ 161.00</h3></a
+          >							
+    </div>
+			
+			</div>
+			<div class="product">
+				<picture>
+					<img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQCm8mfQxuzSH2mMaB3n2MydDRUF2p8K4OSvc6ScKmRwbLkW-1B6Njs1yxTKexiR_x0GGkM40kuEGJgNb0uFPDV9Nj4dg&s=19" alt="">
+				</picture>
+				<div class="detail">
+					
+          <h2><b>  Tema
+            
+          
+            </b></h2>
+            Harbor, casino, beach, da fishing
+            <a 
+            href=""
+            class="btn btn-primary"
+            target="blank"
+            >   
+          <h3>  <i class="fas fa-bed ">  </i>
+               
+              GH₵ 161.00</h3></a
+          >					
+    </div>
+			
+			</div>
+	
+    
+			
+			<div class="product">
+				<picture>
+				  <img src="data:image/jpeg;base64,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" alt="error" />
+       
+				</picture>
+				<div class="detail">
+					
+						<h2><b>Accra
+             
+              </b></h2>
+              Casino, zoo, beach, da nightlife
+              <a 
+              href=""
+              class="btn btn-primary"
+              target="blank"
+              >   
+            <h3>  <i class="fas fa-bed ">  </i>
+                 
+                GH₵ 300.00</h3></a
+            >				
+      </div>
+			
+			</div>
+
+			<div class="product">
+				<picture>
+					<img src="data:image/jpeg;base64,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" alt="">
+				</picture>
+				<div class="detail">
+					
+          <h2><b>
+            Cape Coast
+           
+           
+            
+            </b></h2>
+            Castle, beach, da tarihi
+        
+            <a 
+      href=""
+      class="btn btn-primary"
+      target="blank"
+      >   
+    <h3>  <i class="fas fa-bed ">  </i>
+         
+        GH₵ 181.00</h3></a
+    >		
+    </div>
+			
+			</div>
+			
+			</div>
+			
+			
+		</sectio>
+ 
+
+
+
+
+  
+<section id="food" data-aos="fade-down"
+data-aos-easing="linear"
+data-aos-duration="1500">
+
+
+ 
+<div class="food-container container">
+  <div class="food-type fruite">
+    <div class="img-container">
+      <img src="https://images.trvl-media.com/hotels/2000000/1640000/1632500/1632468/3d7d5dac.jpg?impolicy=resizecrop&rw=670&ra=fit"  alt="error" />
+      <div class="img-content">
+        <h3>Reviews</h3>
+        <a 
+          href="/comment"
+          class="btn btn-primary"
+          target="blank"
+          > </a
+        >
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+      
+<!--resorts-->
+
+<img src="https://i.postimg.cc/HL8S8qnq/k.jpg" style="box-shadow:0 2px 10px -3px #117964; margin-top:20px;  border-radius:50%; height:35px; width:35px; float:left; margin-bottom:10px; "alt="" />
+<h2 class="food-titile" style="text-align:left;margin-top:20px; ">#Top Hotels <i class="fas fa-tablet-rugged    "></i> </h2><h4 style="text-align:left;">#5 Star Hotels</h4>
+
+<sectio data-aos="fade-down"
+data-aos-easing="linear"
+data-aos-duration="500">
+  <div class="product">
+    <picture>
+     <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Accra+luxury+Apartments,+Boundry+road,+Boundary+Rd/@5.7128509,-0.1166013,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9b3443ea7a35:0x607d7ba761637da2!2m2!1d-0.1716737!2d5.6256888!3e0?hl=en"> <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/264068869.jpg?k=f4ba570e0d3b314ddb9fc98482118ee46bda9b025942cdcb56807247e9bb17ac&o="  alt="">
+     </a>
+    </picture>
+    
+    <div class="detail">
+      
+      <h2><b>  Accra Luxury Apartments
+       
+      
+        </b></h2>
+        
+       
+      
+ 
+ 
+        5 Circular Road, 19 Cantonments, Accra 
+  
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+    
+       
+        <a 
+        href="https://fiestahospitality.com/"
+        class="btn btn-primary"
+        target="blank"
+        >   <h3 style="align:center;">  </i>
+           
+          GH₵ 1,100</h3></a
+      >
+    				
+</div>
+  
+  </div>
+  <div class="product">
+    <picture>
+     <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Embassy+Gardens+by+Clifton+Homes,+Fourth+Circular+Rd,+Accra/@5.6931273,-0.1174211,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9a9159757f15:0xfc04d16d219852cd!2m2!1d-0.167922!2d5.5847494!3e0?hl=en"> <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/163809903.jpg?k=7baa6bfd01f57efbe6ef8b14da45876c4d6b45d5770cd98d9a0ed4ab4fd53cf8&o=&hp=1" alt="">
+     </a>
+    </picture>
+    <div class="detail">
+      
+      <h2><b>
+        Embassy Gardens
+       
+      
+       
+     
+        </b></h2>
+        Beautifully Furnished Studio Apartment
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <a
+        href="https://fiestahospitality.com/"
+        class="btn btn-primary"
+        target="blank"
+        >   <h3>  </i>
+           
+          GH₵ 1,068</h3></a
+      >		
+</div>
+  
+  </div>
+    
+  <div class="product">
+    <picture>
+    <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/The+Gallery,+Boundary+Rd,+Accra/@5.7128509,-0.1166013,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9b6b1704a375:0x96b79f0cccf9de54!2m2!1d-0.1716779!2d5.6255708!3e0?hl=en">  <img src="https://images.trvl-media.com/hotels/28000000/27160000/27159100/27159079/1921af23.jpg?impolicy=resizecrop&rw=670&ra=fit" alt="">
+    </a>
+    </picture>
+    <div class="detail">
+      
+      <h2><b>  Gallery Hotel Accra
+       
+        
+        </b></h2>
+        Located 11.3 km from Kwame Nkrumah Memorial Park, Gallery Apartments
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <a
+        href="https://fiestahospitality.com/"
+        class="btn btn-primary"
+        target="blank"
+        >   <h3>  </i>
+           
+          GH₵ 1,586</h3></a
+      >			
+</div>		
+  </div>
+  
+
+  <div class="product">
+    <picture>
+      <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Mirage+Royale+Hotel,+Adjacent+A%26C+shopping+Mall,+East+Legon,+Accra/@5.7003182,-0.1166013,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9b538b9f23d7:0xb55bd1fdb8ead403!2m2!1d-0.1526223!2d5.6398698!3e0?hl=en"><img src="https://images.trvl-media.com/hotels/5000000/4360000/4355700/4355697/35fbf43a.jpg?impolicy=fcrop&w=670&h=385&p=1&q=medium" alt="error" />
+      </a>
+    </picture>
+    <div class="detail">
+      
+      <h2><b> Mirage Royale Hotel
+        
+      
+       
+        
+        </b></h2>
+        1st Mirage Avenue Adjacent A&C Shopping Mall East, Accra Ghana
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+       
+        <a
+        href="https://fiestahospitality.com/"
+        class="btn btn-primary"
+        target="blank"
+        >   <h3>  </i>
+           
+          GH₵ 1,340</h3></a
+      >				
+</div>
+  
+  </div>
+  <div class="product">
+    <picture>
+      <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/The+African+Regent,+237%2F238+N+Airport+Rd,+Accra/@5.7102798,-0.1174211,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9bc8f3c5ceed:0x18304db4730a3316!2m2!1d-0.1767835!2d5.6190545!3e0?hl=en"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/f7/83/22/poolside-at-the-african.jpg" alt="">
+      </a>
+      </picture>
+    <div class="detail">
+      
+      <h2><b> The African Regent Hotel
+       
+        
+        </b></h2>
+        237/238 Airport West, Accra Ghana
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <a
+        href="https://fiestahospitality.com/"
+        class="btn btn-primary"
+        target="blank"
+        >   <h3>  </i>
+           
+          GH₵ 1,450</h3></a
+      >				
+</div>
+  
+  </div>
+  <div class="product">
+    <picture>
+    <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Accra+City+Hotel,+Barnes+Road,+Accra/@5.6771407,-0.2005805,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf90984ba34e99:0xe2244cc1bebeab3f!2m2!1d-0.2036767!2d5.5529365!3e0?hl=en">  <img src="https://cf.bstatic.com/xdata/images/hotel/max500/354295713.jpg?k=4dcf6bf78af3f927493c17b4b109f51e9d62853eecea83f4b40d8dea629548fd&o=&hp=1" alt="">
+    </a>
+    </picture>
+    <div class="detail">
+      
+      <h2><b> Accra City Hotel
+        
+      
+        </b></h2>
+        Barnes Road, Accra Ghana
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <a
+        href="https://fiestahospitality.com/"
+        class="btn btn-primary"
+        target="blank"
+        >   <h3>  </i>
+           
+          GH₵ 1,221</h3></a
+      >				
+</div>
+  
+  </div>
+
+
+  
+  <div class="product">
+    <picture>
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/244205447.jpg?k=2ed7641239263f3448f661de3794a54321b02bf018e73dd2134d0680cc09a59d&o=&hp=1" alt="error" />
+   
+    </picture>
+    <div class="detail">
+      
+        <h2><b>Holiday Inn Accra Airport, an IHG Hotel
+         
+          </b></h2>
+          Plot 19 & 20 Airport City, Accra Ghana
+          <div class="star-rating" style="color:orange; margin-top:2px;">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+      
+          <a
+          href="https://fiestahospitality.com/"
+          class="btn btn-primary"
+          target="blank"
+          >   <h3>  </i>
+             
+            GH₵ 1,500</h3></a
+        >			
+  </div>
+  
+  </div>
+
+  <div class="product">
+    <picture>
+    <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Kempinski+Hotel+Gold+Coast+City+Accra,+Ministries+PMB,+66+Gamel+Abdul+Nasser+Ave,+Accra/@5.6852787,-0.1976091,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf909b28eec401:0x6a18f3f939117f97!2m2!1d-0.1979295!2d5.5541221!3e0?hl=en">  <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/234685782.jpg?k=dcd5ba95dd72ba688e26bbe0dc99dc26597e5c6b0c9aa4642aab29a7e425ae40&o=&hp=1" alt="error"/>
+    </a>
+    </picture>
+    <div class="detail">
+      
+      <h2><b>
+        Kempinski Hotel Gold Coast City
+       
+       
+        
+        </b></h2>
+        Gamel Abdul Nasser Avenue PMB 66 - Ministries, Accra Ghana
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+
+        <a
+        href="https://fiestahospitality.com/"
+        class="btn btn-primary"
+        target="blank"
+        >   <h3>  </i>
+           
+          GH₵ 2,100</h3></a
+      >		
+</div>
+  
+  </div>
+  
+  </div>
+  
+  
+</sectio>
+
+<!--end-->
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="https://i.postimg.cc/HL8S8qnq/k.jpg" style="box-shadow:0 2px 10px -3px #117964; margin-top:20px;  border-radius:50%; height:35px; width:35px; float:left; margin-bottom:10px; "alt="" />
+<h2 class="food-titile" style="text-align:left;margin-top:20px; ">#Top Resorts <i class="fas fa-tablet-rugged    "></i> </h2><h4 style="text-align:left;">Chill & Relax</h4>
+
+
+<sectio data-aos="fade-down"
+data-aos-easing="linear"
+data-aos-duration="500" style=" height:60vh;" >
+  <div class="product" style=" height:30vh; object-fit:cover; width:30vh;  ">
+    <picture>
+   <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Lou+Moon+Resort+-+Eco+Luxury,+Lou+Moon+Resort+Agyan+via,+Axim/@5.3035742,-1.6363661,9z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfe7ec41cb301461:0x878349e8ab5dc37e!2m2!1d-2.2017396!2d4.8288106!3e0?hl=en">   <img src="https://www.telegraph.co.uk/content/dam/Travel/hotels/africa/lou-moon-lodge-ghana.jpg"  style=" height:30vh; object-fit:cover; " alt="">
+   </a>  
+  </picture>
+    <div class="detail">
+      
+      <h2><b>  Lou Moon Eco Luxurt Resort
+       
+      
+        </b></h2>
+      
+        <i class="fas fa-search-location "></i> Agyan via Axim Western Region, Ghana
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+
+    
+        <a
+        href=""
+        class="btn btn-primary"
+        target="blank"
+        >   <h3>  </i>
+           
+          GH₵ 1,540</h3></a
+      >				
+</div>
+  
+  </div>
+  <div class="product" style=" height:30vh; object-fit:cover;  width:30vh;  ">
+    <picture>
+  <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/BridgeView+Resort,+Akosombo+Dam,+Akosombo/@6.0026127,-0.2307743,10z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x1020af89e40d3015:0x109a1a4ebb495027!2m2!1d0.0912979!2d6.2384595!3e0?hl=en">  <a href="https://bridgeviewgh.com/venue">  <img src="  https://bridgeviewgh.com/client/images/homeimg-9.jpg"  style=" height:30vh; object-fit:cover; " alt=""></a>
+    </a>
+  </picture>
+    <div class="detail">
+      
+      <h2><b>  Bridge View
+       
+      
+        </b></h2>
+        <i class="fas fa-search-location "></i>  Atimpoku Roundabout Akosombo, Ghana
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+
+    
+        <a
+        href=""
+        class="btn btn-primary"
+        target="blank"
+        >   <h3>  </i>
+           
+          GH₵ 1,989</h3></a
+      >							
+</div>
+  
+  </div> <div class="product" style=" height:30vh; object-fit:cover; width:30vh;    ">
+    <picture>
+     <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/BridgeView+Resort,+Akosombo+Dam,+Akosombo/@6.0026127,-0.2307743,10z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x1020af89e40d3015:0x109a1a4ebb495027!2m2!1d0.0912979!2d6.2384595!3e0?hl=en"> <img src="https://images.trvl-media.com/hotels/7000000/6420000/6415500/6415409/b1f6900b.jpg?impolicy=resizecrop&rw=670&ra=fit" style=" height:30vh; object-fit:cover; " alt="">
+    </a>
+    </picture>
+   
+    <div class="detail">
+      
+      <h2><b>  Bojo Beach Resort
+       
+      
+        </b></h2>
+        <i class="fas fa-search-location "></i>  KoKrobite Rd Bortianor, Accra Ghana
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+
+    
+        <a
+        href=""
+        class="btn btn-primary"
+        target="blank"
+        >   <h3>  </i>
+           
+          GH₵ 1,601</h3></a
+      >							
+</div>
+  
+  </div> <div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+    <picture>
+      <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/White+Sands+Beach+Resort+and+Spa+Ghana,+Gomoa+Fetteh+Central+Region+Ghana/@5.5764709,-0.5562039,10z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdfb798831496c3:0x8c73c828d5d55ac9!2m2!1d-0.4691482!2d5.4272851!3e0?hl=en"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/f8/36/f0/enticing-pool-by-the.jpg?w=600&h=-1&s=1"  style=" height:30vh; object-fit:cover; " alt="">
+    </a>
+    </picture>
+    <div class="detail">
+      
+      <h2><b>  White Sands Beach Resort and Spa
+       
+      
+        </b></h2>
+        <i class="fas fa-search-location "></i>  Gomoa Fetteh, Central Region P.O Box 575 Cantonments.
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+
+    
+        <a
+        href=""
+        class="btn btn-primary"
+        target="blank"
+        >   <h3>  </i>
+           
+          GH₵ 1,700</h3></a
+      >							
+</div>
+  
+  </div> 
+
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+ <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Peace+Holiday+Resort,+Big+Ada/@5.8346477,0.2121234,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x10210195b26060f9:0x896772b6147bfddb!2m2!1d0.6233353!2d5.7951317!3e0?hl=en"> <img src="http://peaceholidayresort.com/wp-content/uploads/2021/03/picture-1.jpg "  style=" height:30vh; object-fit:cover; "alt="">
+ </a>
+</picture>
+<div class="detail">
+  
+  <h2><b>  Peace Holiday Resort
+   
+  
+    </b></h2>
+    <i class="fas fa-search-location "></i> Solikope, Ada Ghana
+    <div class="star-rating" style="color:orange; margin-top:2px;">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+    </div>
+
+    <a
+    href=""
+    class="btn btn-primary"
+    target="blank"
+    >   <h3>  </i>
+       
+      GH₵ 1,640</h3></a
+  >						
+</div>
+
+</div>
+
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+<a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Aqua+Safari+Resort,+Agorkpo+St,+Ada+Foah/@5.8346477,0.2105003,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x102102182056aaf5:0x23fbaeafa265fbcb!2m2!1d0.6187924!2d5.8253385!3e0?hl=en"><img src="https://media.tacdn.com/media/attractions-splice-spp-720x480/0b/b1/cb/5d.jpg "  style=" height:30vh; object-fit:cover; " alt="">
+</a></picture>
+<div class="detail">
+
+<h2><b>  Aqua Safari Resort
+ 
+
+  </b></h2>
+  <i class="fas fa-search-location "></i> Agorkpo St., Ada 00233 Ghana
+  <div class="star-rating" style="color:orange; margin-top:2px;">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+  </div>
+
+  <a
+  href=""
+  class="btn btn-primary"
+  target="blank"
+  >   <h3>  </i>
+     
+    GH₵ 1,498</h3></a
+>							
+</div>
+
+</div>
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+<a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Safari+Valley+Resort,+Adukrom/@5.9205358,-0.1380158,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9b2364657041:0xd8a3e558c5b21d25!2m2!1d-0.0770149!2d6.0124162!3e0?hl=en"><img src="https://safarivalleyresort.com/wp-content/uploads/2022/06/DJI_0309.jpg " style=" height:30vh; object-fit:cover; "  alt="">
+</a> 
+</picture>
+<div class="detail">
+
+<h2><b>  Safari Valley Resort
+ 
+
+  </b></h2> 
+  <i class="fas fa-search-location "></i>Okere District, Akropong Ghana
+  <div class="star-rating" style="color:orange; margin-top:2px;">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+  </div>
+
+  <a
+  href=""
+  class="btn btn-primary"
+  target="blank"
+  >   <h3>  </i>
+    
+    GH₵ 1,920</h3></a
+>							
+</div>
+
+</div>
+
+
+</sectio>
+
+
+
+
+
+
+<!--
+
+
+    
+    <section id="food" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+   
+  
+     
+    <div class="food-container container">
+      <div class="food-type fruite">
+        <div class="img-container">
+          <img src="https://images.trvl-media.com/hotels/2000000/1640000/1632500/1632468/3d7d5dac.jpg?impolicy=resizecrop&rw=670&ra=fit"  alt="error" />
+          <div class="img-content">
+            <h3>FiestaRoyale</h3>
+            <a
+              href="https://fiestahospitality.com/"
+              class="btn btn-primary"
+              target="blank"
+              > more</a
+            >
+          </div>
+          
+        </div>
+        
+      </div>
+      
+     
+        <div class="food-type vegetable">
+          
+          <div class="img-container" >
+            <img src="https://images.trvl-media.com/hotels/15000000/14650000/14648000/14648000/85d0ac50_z.jpg"  style="box-shadow:0 2px 10px -3px #117964; " alt="error" />
+            <div class="img-content">
+              <h3>Agoo</h3>
+              <a
+                href="https://agoo-hostel.business.site/?utm_source=gmb&utm_medium=referral"
+                class="btn btn-primary"
+                target="blank"
+                >more</a
+              >
+            </div>
+          </div>
+          
+        </div>
+        <div class="food-type grin" >
+          
+          <div class="img-container" >
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/70/2e/95/superior-room.jpg?w=900&h=-1&s=1"  style="box-shadow:0 2px 10px -3px #117964; " alt="error" />
+            <div class="img-content">
+              <h3>LaBeachHotel</h3>
+              <a
+                href="https://labadibeachhotelgh.com/"
+                class="btn btn-primary"
+                target="blank"
+                > more</a>
+            </div>
+          </div>
+        </div>
+         
+          
+        </div>
+       
+      </div>
+      
+      <div class="More">
+              
+              <a 
+                href="/hotel"
+                class="btn btni-primary"
+                target="blank" style="height:35px;"
+                >Explore More</a
+              >
+      </div>
+        
+      
+      
+    </section>
+  -->
+<!--
+  <div class="food-menu-item">
+    <div class="food-img">
+      <img src="https://i.postimg.cc/HL8S8qnq/k.jpg" style="box-shadow:0 2px 10px -3px #117964; border-radius:50%; height:70px; width:70px; float:left; margin-bottom:10px; "alt="" />
+    
+      <img src="https://i.postimg.cc/Zn2jVjW9/tt.jpg" style="box-shadow:0 2px 10px -3px #117964; border-radius:50%; height:70px; width:70px; float:left; margin-bottom:10px; "alt="" />
+
+      <img src="https://i.postimg.cc/HL8S8qnq/k.jpg" style="box-shadow:0 2px 10px -3px #117964; border-radius:50%; height:70px; width:70px; float:left; margin-bottom:10px; "alt="" />
+    
+      <img src="https://i.postimg.cc/Zn2jVjW9/tt.jpg" style="box-shadow:0 2px 10px -3px #117964; border-radius:50%; height:70px; width:70px; float:left; margin-bottom:10px; "alt="" />
+      <img src="https://i.postimg.cc/HL8S8qnq/k.jpg" style="box-shadow:0 2px 10px -3px #117964; border-radius:50%; height:70px; width:70px; float:left; margin-bottom:10px; "alt="" />
+    </div>
+  </div>
+-->
+
+    <section id="food-menu" data-aos="fade-up"
+    data-aos-duration="1000">
+   
+      <div class="food-menu-container container" style="margin-top:1px;">
+        
+        <div class="food-menu-item">
+          
+          <div class="food-img" >
+            <img src="https://i.postimg.cc/HL8S8qnq/k.jpg" style="box-shadow:0 2px 10px -3px #117964; border-radius:50%; height:35px; width:35px; float:left; margin-bottom:10px; "alt="" />
+            <h2 class="food-titile" style="text-align:left;"> Bôndai </h2><h4 style="text-align:left;">#Restaurant & Bar</h4>
+           <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/B%C3%B4ndai,+52+Dadebu+Rd,+Accra/@5.6895751,-0.1936705,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9bee20d8398f:0x97d6a6fa052b9cda!2m2!1d-0.1780402!2d5.5629503!3e0?hl=en"> <img src="https://i.postimg.cc/HL8S8qnq/k.jpg" style="box-shadow:0 2px 10px -3px #117964; margin-bottom:20px; "alt="" /></a>
+          </div>
+          <div class="food-description" style="text-align:left;margin-top:2px; ">
+           
+            <p>#No13<br> 
+            
+          
+             A restaurant, specializing in healthy Mediterranean and Asian food.
+            <p class="food-price">Price:GHS 25 - GHS 300</p>
+            <a
+                href="/form"
+                class="btn btn-primary"
+                target="blank"
+                >More</a
+              >
+          </div>
+        </div>
+
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://i.postimg.cc/HL8S8qnq/k.jpg" style="box-shadow:0 2px 10px -3px #117964; border-radius:50%; height:35px; width:35px; float:left; margin-bottom:10px; "alt="" />
+          
+            <img src="https://i.postimg.cc/Zn2jVjW9/tt.jpg" style="box-shadow:0 2px 10px -3px #117964; border-radius:50%; height:35px; width:35px; float:left; margin-bottom:10px; "alt="" />
+  
+            <h2 class="food-titile" style="text-align:left; ">  Bloombar</h2><h4 style="text-align:left;">#Restaurant & Bar</h4>
+          <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Bloom+Bar,+House+No.+F,+330%2F2+Troas+St,+Accra/@5.6795278,-0.1936705,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf907376190709:0x508a0346fafe82d7!2m2!1d-0.1805259!2d5.5572452!3e0?hl=en">  <img
+              src="https://i.postimg.cc/Zn2jVjW9/tt.jpg"style="box-shadow:0 2px 10px -3px #117964; margin-bottom:20px;  "
+              alt="error"
+            /></a>
+          </div>
+          <div class="food-description" style="text-align:left; margin-top:2px;">
+           
+            <p>#No11<br>
+              31 of 42 Bars in Accra<br>  
+              196 of 302 Restaurants in Accra
+            <p class="food-price">Price:GHS 20 - GHS 850</p>
+            <a
+                href="https://www.instagram.com/bloombargh/"style="box-shadow:0 2px 10px -3px #117964; "
+                class="btn btn-primary"
+                target="blank"
+                >learn more</a
+              >
+          </div>
+        </div>
+
+
+
+
+
+
+           <h2 class="food-titile" style="text-align:left;margin-top:20px; ">Experience the Beauty, History and the Culture Of Accra in a Day<i class="fas fa-tablet-rugged    "></i> </h2>
+        
+        
+        <sectio data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="500" style=" height:47vh;" >
+          <div class="product" style=" height:30vh; object-fit:cover; width:30vh;  ">
+            <picture>
+              <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6f/01/b5.jpg"  style=" height:30vh; object-fit:cover; " alt="">
+            </picture>
+            <div class="detail">
+              
+              <h2><b>  
+               
+              
+                </b></h2>
+              
+              <i class="fas fa-clock    "></i>
+                8 to 11 hours 
+            
+                <div class="star-rating" style="color:orange; margin-top:2px;">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              
+                <a
+                href=""
+                class="btn btn-primary"
+                target="blank"
+                >   <h3>  </i>
+                  
+                  GH₵ 110</h3></a
+              >					
+        </div>
+          
+          </div>
+          <div class="product" style=" height:30vh; object-fit:cover;  width:30vh;  ">
+            <picture>
+              <img src="https://www.easytrackghana.com/images/photos2/mobile/Elmina%20Castle%20pic.jpg"  style=" height:30vh; object-fit:cover; " alt="">
+            </picture>
+            <div class="detail">
+              
+              <h2><b> 
+               
+              
+                </b></h2>
+                <i class="fas fa-clock    "></i>
+                6 hours
+                <div class="star-rating" style="color:orange; margin-top:2px;">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              
+                <a
+                href=""
+                class="btn btn-primary"
+                target="blank"
+                >   <h3>  </i>
+                  
+                  GH₵ 120</h3></a
+              >						
+        </div>
+          
+          </div> <div class="product" style=" height:30vh; object-fit:cover; width:30vh;    ">
+            <picture>
+              <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/29/51/88.jpg"  style=" height:30vh; object-fit:cover; " alt="">
+            </picture>
+            <div class="detail">
+              
+              <h2><b>  
+               
+              
+                </b></h2>
+                <i class="fas fa-clock    "></i>
+                8 hours 
+            
+                <div class="star-rating" style="color:orange; margin-top:2px;">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              
+                <a
+                href=""
+                class="btn btn-primary"
+                target="blank"
+                >   <h3>  </i>
+                  
+                  GH₵ 137</h3></a
+              >						
+        </div>
+          
+          </div> <div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+            <picture>
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/65/35/f2/caption.jpg?w=500&h=400&s=1"  style=" height:30vh; object-fit:cover; " alt="">
+            </picture>
+            <div class="detail">
+              
+              <h2><b>  
+               
+              
+                </b></h2>
+                <i class="fas fa-clock    "></i>
+                3 hours 
+                <div class="star-rating" style="color:orange; margin-top:2px;">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              
+                <a
+                href=""
+                class="btn btn-primary"
+                target="blank"
+                >   <h3>  </i>
+                  
+                  GH₵ 150</h3></a
+              >					
+        </div>
+          
+          </div> 
+       
+        
+     
+        
+      
+      </div>
+        
+        <!--end-->
+          
+     
+
+
+        <h2 class="food-titile" style="text-align:left;margin-top:20px; margin-left:10px; ">These are 10 of our favourite art galleries in Ghana: <i class="fas fa-tablet-rugged    "></i> </h2>
+        
+<sectio data-aos="fade-down"
+data-aos-easing="linear"
+data-aos-duration="500" style=" height:47vh;" >
+  <div class="product" style=" height:30vh; object-fit:cover; width:30vh;  ">
+    <picture>
+     <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/ADA+%5C+contemporary+art+gallery,+JRCC%2B5JF,+Villaggio+Vista,+N+Airport+Rd,+Accra/@5.7106471,-0.1176524,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9b34892739b7:0x51da2a3d7e6ad9f1!2m2!1d-0.1784407!2d5.6204497!3e0?hl=en"> <img src="https://www.ada-accra.com/wp-content/uploads/2021/03/abt3.jpg"  style=" height:30vh; object-fit:cover; " alt="">
+    
+     </a></picture>
+    <div class="detail">
+      
+      <h2><b>   ADA, Accra art gallery 
+       
+      
+        </b></h2>
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+       
+    		
+</div>
+  
+  </div>
+  <div class="product" style=" height:30vh; object-fit:cover;  width:30vh;  ">
+    <picture>
+    <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Nubuke+Foundation,+7,+Lome+Cl,+Accra/@5.7128509,-0.1166013,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x104056a267aead47:0xe9c6bccbfa7ad07c!2m2!1d-0.1747042!2d5.636297!3e0?hl=en">  <img src="https://images.squarespace-cdn.com/content/v1/61b0bebec6accb6e3301e2cd/1639051098517-PJJ531416B8LGGQU34T0/nubuke-foundation-accra-off-to-magazine-nipah-dennis-2020-0001.jpg"  style=" height:30vh; object-fit:cover; " alt="">
+    </a> 
+    </picture>
+    <div class="detail">
+      
+      <h2><b>  Nubuke Foundation
+       
+      
+        </b></h2>
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+</div>
+  
+  </div>  <div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+    <picture>
+     <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Loom,+Ide+Rd,+Accra/@5.671713,-0.1432082,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9a0600616de7:0xb1afe85bff2e28dd!2m2!1d-0.2149853!2d5.5670019!3e0?hl=en"> <img src="https://media.timeout.com/images/100708473/750/422/image.jpg"  style=" height:30vh; object-fit:cover; " alt="">
+     </a>  
+    </picture>
+    <div class="detail">
+      
+      <h2><b>  The Loom 
+       
+      
+        </b></h2>
+        <div class="star-rating" style="color:orange; margin-top:2px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>			
+</div>
+  
+  </div> 
+  <div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+    <picture>
+     <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Kuenyehia+Trust+for+Contemporary+Art,+Mukose+link,+Accra/@5.6972392,-0.1436451,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9aa00b197dc9:0xb1b066924efb31b8!2m2!1d-0.2305458!2d5.593225!3e0?hl=en"> <img src="https://thesoleadventurer.com/wp-content/uploads/2018/12/DSF4037.jpg"  style=" height:30vh; object-fit:cover; " alt="">
+     </a></picture>
+    <div class="detail">
+      
+      
+      <h2><b> Kuenyehia art gallery
+       
+      
+      </b></h2>
+      <div class="star-rating" style="color:orange; margin-top:2px;">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+      </div>
+          			
+</div>
+  
+</div>
+
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+ <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Noldor+Artist+Residency,+128+Ring+Rd+E,+Accra/@5.6866627,-0.1936705,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9181285fd565:0xd57b4a6ea3830c95!2m2!1d-0.1668698!2d5.5585082!3e0?hl=en"> <img src="https://d16kd6gzalkogb.cloudfront.net/magazine_images/Emmanuel_Takas_exhibition_after_his_residency_at_Noldor.jpeg"  style=" height:30vh; object-fit:cover; " alt=""></a>
+</picture>
+<div class="detail">
+  
+  <h2><b>  NOLDOR RESIDENCY
+   
+  
+  </b></h2>
+  <div class="star-rating" style="color:orange; margin-top:2px;">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+  </div>
+       
+</div>
+
+</div>
+
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+ <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Gallery+1957,+66+Gamel+Abdul+Nasser+Ave,+Accra/@5.6783871,-0.1976219,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf912807a46099:0x4365e44a01d5bb61!2m2!1d-0.1980842!2d5.5549526!3e0?hl=en"> <img src="https://d7hftxdivxxvm.cloudfront.net/?resize_to=fill&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FZBDKNLUBeNtmVY6U_dPNTw%252F1%2BKwesi%2BBotchway%252C%2BInstall%252C%2BGallery%2B1957%2BLondon%252C%2BOct%2B2020.jpg&width=1200&height=630&quality=80"  style=" height:30vh; object-fit:cover; " alt="">
+ </a>
+</picture>
+<div class="detail">
+
+  <h2><b>  Gallery 1957
+
+ 
+
+  </b></h2>
+  <div class="star-rating" style="color:orange; margin-top:2px;">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+  </div>			
+</div>
+
+</div>
+<div class="product" style=" height:30vh; object-fit:cover; width:30vh;   ">
+<picture>
+ <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Artists+Alliance+Gallery,+HR4V%2BRG9,+La+Rd,+Accra/@5.6787014,-0.1936705,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf900684d26abd:0xd9fae0001cf4aa8c!2m2!1d-0.15611!2d5.556958!3e0?hl=en"> <img src="https://i0.wp.com/mrpocu.com/wp-content/uploads/2022/04/15715717-2562-4302-896C-FD9A9C5C3124.jpeg?resize=671%2C447&ssl=1"  style=" height:30vh; object-fit:cover; " alt="">
+ </a>
+</picture>
+<div class="detail">
+
+  <h2><b>  Artists’ Alliance Gallery 
+ 
+
+  </b></h2>
+  <div class="star-rating" style="color:orange; margin-top:2px;">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+  </div>			
+</div>
+
+</div>
+
+
+</sectio> 
+
+
+
+        <section id="food-menu" data-aos="fade-up"
+        data-aos-duration="1000">
+       
+          <div class="food-menu-container container" style="margin-top:1px;">
+            
+         
+            
+
+
+        
+        <div class="food-menu-item">
+          <div class="food-img">
+           <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Dimaensa+Restaurant,+52+Swaniker+St,+Accra/@5.7066791,-0.1409752,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9bbc6722a6c9:0x3a2631965883254f!2m2!1d-0.2191896!2d5.6135262!3e0?hl=en"> <img src="https://i.postimg.cc/XqrXnkQk/jjj.jpg" style="box-shadow:0 2px 10px -3px #117964; border-radius:50%; height:35px; width:35px; float:left; margin-bottom:10px; "alt="" />
+           </a><h2 class="food-titile" style="text-align:left; ">  Dima3nsa</h2><h4 style="text-align:left;">#Restaurant </h4>
+         
+            <img src="https://i.postimg.cc/XqrXnkQk/jjj.jpg" style="box-shadow:0 2px 10px -3px #117964;margin-bottom:30px; margin-bottom:20px;" alt="" />
+          </div>
+          <div class="food-description" style="text-align:left;margin-top:2px;">
+            
+            <p>#No16<br>
+              BAR • GRILL • LOUNGE
+              11:00 AM - 11:00 PM
+              MONDAY TO SUNDAY
+            </p>
+            <p class="food-price">Price:GHS 15 - GHS 100</p>
+            <a
+                href="https://www.instagram.com/dimaensa_/"
+                class="btn btn-primary"
+                target="blank"
+                >Explore More</a
+              >
+          </div>
+        </div>
+        
+        <div class="food-menu-item">
+          <div class="food-img">
+           <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Organic+Food+Cafe+(OFC),+Market,+Top+Floor+Rebublic+Bank,+Madina/@5.7003182,-0.1185821,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9d54fdd26b41:0x7600fa2d7d890240!2m2!1d-0.1675113!2d5.6775721!3e0?hl=en"> <img src="https://media-cdn.tripadvisor.com/media/photo-p/1c/00/1c/81/photo0jpg.jpg" style="box-shadow:0 2px 10px -3px #117964; border-radius:50%; height:35px; width:35px; float:left; margin-bottom:10px; "alt="" />
+           </a>  <h2 class="food-titile" style="text-align:left; ">   Organic food cafe</h2><h4 style="text-align:left;">#Restaurant </h4>
+         
+            <img src="https://media-cdn.tripadvisor.com/media/photo-p/1c/00/1c/81/photo0jpg.jpg"style="box-shadow:0 2px 10px -3px #117964; margin-bottom:20px; " alt="" />
+          </div>
+          <div class="food-description" style="text-align:left; margin-top:2px;">
+           
+            <p>#No47<br>
+              Market, Top Floor Rebublic Bank, Madina<br>
+              
+              .10:00AM - 8:30PM
+              
+            </p>
+            <p class="food-price">Price:GHS 15 - GHS 100</p>
+            <a
+                href="https://en.wikipedia.org/wiki/Grain"
+                class="btn btn-primary"
+                target="blank"
+                >learn more</a
+              >
+          </div>
+        </div>
+
+
+
+         
+        <div class="food-menu-item">
+          <div class="food-img">
+             <img src="https://i.postimg.cc/NGK1s6yn/jj.jpg" style="box-shadow:0 2px 10px -3px #117964; border-radius:50%; height:35px; width:35px; float:left; "alt="" />
+             <h2 class="food-titile" style="text-align:left; ">  Bosphorus</h2><h4 style="text-align:left;">#Restaurant & Bar</h4>
+         
+            <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Bosphorus+Restaurant+%26+Cafe,+Coffee+Shop,+Accra/@5.6857175,-0.1874681,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9a986504d67d:0xa1d69148178757fa!2m2!1d-0.1689924!2d5.5698451!3e0?hl=en"><img src="https://i.postimg.cc/NGK1s6yn/jj.jpg" style="box-shadow:0 2px 10px -3px #117964;  "alt="" /></a>
+          </div>
+
+          <div class="food-description" style="text-align:left;margin-top:2px;">
+           
+            <p>
+              #No32<br>
+              Turkish, Middle Eastern
+SPECIAL DIETS:<br>
+Halal, Vegetarian Friendly
+    </p>
+            <p class="food-price">Price:GHS 45 - GHS 300</p>
+            <a
+                href="https://maps.google.com/maps?saddr=&daddr=Labone+Ndabaningi+Sithole+Avenue%2C+Near+Coffee+shop%2C+Labone%2C+Accra+094522+Ghana@5.569844,-0.168802"
+                class="btn btn-primary"
+                target="blank"
+                >Directions</a
+              >
+          </div>
+        </div>
+    
+              
+      
+
+
+
+        
+        <div class="food-menu-item">
+          <div class="food-img">
+          <a href="https://www.google.com.gh/maps/dir/5.7711202,0.0819187/Dimaensa+Restaurant,+52+Swaniker+St,+Accra/@5.7066791,-0.1409752,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0xfdf9bbc6722a6c9:0x3a2631965883254f!2m2!1d-0.2191896!2d5.6135262!3e0?hl=en">  <img src="https://i.postimg.cc/XqrXnkQk/jjj.jpg" style="box-shadow:0 2px 10px -3px #117964; border-radius:50%; height:35px; width:35px; float:left; margin-bottom:10px; "alt="" />
+          </a> <h2 class="food-titile" style="text-align:left; ">  Dima3nsa</h2><h4 style="text-align:left;">#Restaurant </h4>
+         
+            <img src="https://i.postimg.cc/XqrXnkQk/jjj.jpg" style="box-shadow:0 2px 10px -3px #117964;margin-bottom:30px; margin-bottom:20px;" alt="" />
+          </div>
+          <div class="food-description" style="text-align:left;margin-top:2px;">
+            
+            <p>#No16<br>
+              BAR • GRILL • LOUNGE
+              11:00 AM - 11:00 PM
+              MONDAY TO SUNDAY
+            </p>
+            <p class="food-price">Price:GHS 15 - GHS 100</p>
+            <a
+                href="https://www.instagram.com/dimaensa_/"
+                class="btn btn-primary"
+                target="blank"
+                >Explore More</a
+              >
+          </div>
+        </div>
+
+
+
+
+<sectio>
+
+
+    </section>
+
+
+
+   
+        
+
+    <section id="contact"data-aos="fade-up"
+    data-aos-duration="1000">
+      <div class="contact-container container"  style="box-shadow:0 2px 10px -3px #117964; ">
+        <div class="contact-img">
+          <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg"  style="box-shadow:0 2px 10px -3px #117964; border-radius:10px; height:350px; " alt="" />
+        </div>
+
+      
+
+<form action='' method="post" >
+  {{form.hidden_tag()}}
+ <h3> We would love to hear from you. <br>Give us your feedback  </h3>
+<div class="form-group">
+  <input type="text"
+    class="form-control"  name="email" type="email" placeholder="Email" required>
+</div>
+
+<div class="form-group">
+  <input type="text"
+    class="form-control" type="comment" placeholder="Comment" required>
+</div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+      </section>
+            
+	  <i class="fas fa-copyright" style="margin-left:60px; margin-top:40px">copyright MyTripGhana 2022 Created by Kalitex Creatives</i>  </body>
+ 
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  
+    <!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+  
+            // Store hash
+            var hash = this.hash;
+  
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+</html>
+<!---
+              <li><a href="#food">Hotel</a></li>
+              <li><a href="#food-menu">Restaurants</a></li>
+              <li><a href="#testimonials">Resorts</a></li>
+              
+            -- >
+            

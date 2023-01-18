@@ -1,0 +1,312 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial scale=1.0, minimum-sale=1" />
+  
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/photo.css')}}">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!--Icon-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!--main css-->
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" type="text/css" href="photo.css">
+
+        <title>TripGhana</title>
+    </head>
+    <body>
+    <header>
+
+    <div class="container">
+
+        <div class="profile">
+
+            <div class="profile-image">
+
+                <img src="https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces"; max-width:50%; alt="">
+
+            </div>
+
+            <div class="profile-user-settings">
+
+                <h1 class="profile-user-name">MyTripGhana</h1>
+
+                <button class="btn profile-edit-btn">Edit Profile</button>
+
+                <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+
+            </div>
+
+            <div class="profile-stats">
+
+                <ul>
+                    <li><span class="profile-stat-count">16</span> posts</li>
+                    <li><span class="profile-stat-count">188 M</span> followers</li>
+                    <li><span class="profile-stat-count">20</span> following</li>
+                </ul>
+
+            </div>
+
+            <div class="profile-bio">
+
+                <p><span class="profile-real-name">TripGhana</span> Chilling be What!!📷✈️🏕️</p>
+
+            </div>
+
+        </div>
+        <!-- End of profile section -->
+
+    </div>
+    <!-- End of container -->
+
+</header>
+
+<main>
+
+    <div class="container">
+
+        <div class="gallery">
+
+            <div class="gallery-item" tabindex="0">
+
+                <img src="https://www.vibe.com/wp-content/uploads/2022/08/Global-Citizen-Festival-Africa.png?w=768" class="gallery-image" alt="">
+
+
+                <div class="gallery-item-info">
+
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56k</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 212</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+
+                <img src="https://cdn.ghanaweb.com/imagelib/pics/264/26467953.jpg" class="gallery-image" alt="">
+
+                <div class="gallery-item-info">
+
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 189k</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 500</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+
+                <img src="https://museafrica.com/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-01-at-8.02.23-PM-685x1024.jpeg" class="gallery-image" alt="">
+
+                <div class="gallery-item-type">
+
+                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+                </div>
+
+                <div class="gallery-item-info">
+
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 242k</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 122</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+
+                <img src="https://ik.imagekit.io/hapniin/uploads/events/HPN_87715207161a0e99aa2651.jpg?ik-sdk-version=php-1.2.2" class="gallery-image" alt="">
+
+                <div class="gallery-item-type">
+
+                    <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+
+                </div>
+
+                <div class="gallery-item-info">
+
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 328k</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 232</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+
+                <img src="https://core-cdn.egotickets.com/production/uploads/event/banner_photo/31542/social_3108e11b5dc19be3.jpg" class="gallery-image" alt="">
+
+                <div class="gallery-item-type">
+
+                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+                </div>
+
+                <div class="gallery-item-info">
+
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 437k</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i>431</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+
+                <img src="https://dawurogh.com/wp-content/uploads/2021/11/image_6483441-59.jpg" class="gallery-image" alt="">
+
+                <div class="gallery-item-info">
+
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 944k</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 321</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+
+                <img src="https://cdn-az.allevents.in/events5/banners/b047005bdccc2a924a9ec02dedf56deb09a15ba17201ae8e2e686589622853d4-rimg-w1200-h1200-gmir.jpg?v=1659638820" class="gallery-image" alt="">
+
+                <div class="gallery-item-type">
+
+                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+                </div>
+
+                <div class="gallery-item-info">
+
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 52k</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 422</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+
+                <img src="https://core-cdn.egotickets.com/production/uploads/event/banner_photo/31556/social_8b089476c7fdbe1c.jpg" class="gallery-image" alt="">
+
+                <div class="gallery-item-info">
+
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 636k</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 232</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+
+                <img src="https://www.okayafrica.com/media-library/performing-all-your-favorite-songs-from-me-on-19th-december-get-your-discounted-early-bird-tickets-via-https-tix-africa-gyakie-physical-tickets-out-in-a-bit-pic-twitter-com-uyknrot1rc.jpg?id=28235404&width=980" class="gallery-image" alt="">
+
+                <div class="gallery-item-type">
+
+                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+                </div>
+
+                <div class="gallery-item-info">
+
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 452k</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 130</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+
+                <img src="https://kuulpeeps.com/wp-content/uploads/2017/10/FLYER.jpg" class="gallery-image" alt="">
+
+                <div class="gallery-item-info">
+
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 341k</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 145</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+
+                <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F223140439%2F213184106337%2F1%2Foriginal.20220203-023258?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=49c41bdb6d254f0afd5394e76e552348" class="gallery-image" alt="">
+
+                <div class="gallery-item-info">
+
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 412k</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 560</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+
+                <img src="https://pbs.twimg.com/media/EGX5JVFWsAAN71O.jpg" class="gallery-image" alt="">
+
+                <div class="gallery-item-type">
+
+                    <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+
+                </div>
+
+                <div class="gallery-item-info">
+
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 320k</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 223</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- End of gallery -->
+
+        <div class="loader"></div>
+
+    </div>
+    <!-- End of container -->
+
+</main>
+
+    </body>
+    </html>

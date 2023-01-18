@@ -1,0 +1,125 @@
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0, minimum-sale=1" />
+    <title>TripGhana</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/debit.css')}}">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="venue.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <script>
+      AOS.init();
+    </script>
+    <nav class="navbar">
+      <div class="navbar-container container">
+          <input type="checkbox" name="" id="">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+            
+            
+            <li><a href="/home">Trips</a></li>
+            <li><a href="/hotel">Hotel</a></li>
+            <li><a href="/signinn">My Account</a></li>
+            <li><a href="/restaurant">Restaurants</a></li>
+            <li><a href="/event">Events</a></li>
+            <li><a href="/centralmall">Shopping</a></li>
+            <li><a href="/security"><b>Rental Cars</b></a></li>
+            <li><a href="/security"><b>Flights</b></a></li>
+            <li><a href="/security"><b>Vacation Pacakages</b></a></li>
+          
+              
+         
+          </ul>
+          
+          <h1 class="logo" style=" font-family:Verdana, Geneva, Tahoma, sans-serif;  font-size: 3vh; margin-top:10px"> <i class="fas fa-search-location"  style="width:10px; height:10px;"  ></i> <a href="/home" style="text-decoration:none; color:#094b65;">MyTripGhana</a></h1>
+   </div>
+  </nav>
+    <section class="showcase-area" id="showcase" data-aos="fade-up"
+    data-aos-duration="1000">
+    
+    <section class="showcase-area" id="showcase" data-aos="fade-up"
+    data-aos-duration="1000">
+    
+      <div class="showcase-container"style="box-shadow:0 2px 10px -3px #117964; " >
+        <h1 class="main-title" id="home" style="color:#fff;">Get out there today.</h1>
+        
+          <p style="color:#fff; text-align:center">  
+            <form >
+              <input type="text" class="fas fa-search-location" style="border-radius: 40px; text-align:center; box-shadow: 0 2px 10px -3px #117964;
+            width: 100%;
+            height: 50px;
+            margin: 10px auto 2px ;
+            border: 1px solid #D9D9D9;"class="btn btn-primary" id="validationCustomUsername" aria-describedby="inputGroupPrepend"  placeholder="Find tours, activities and more" required>
+            
+            <div class="invalid-feedback">   <button class="btn" style="color: #fff; background: #117964;  height:35px; border-radius:10 px; margin-left: 2vw;align:center;" type="submit"><i class="fas fa-search-location" style="align:center;"></i> </button>
+             
+                
+            </form>  
+  
+        
+      </div>
+    </section>
+
+    <section id="food" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+    <h3 class="text-muted " style="text-align:center;">Site Under Review:<br>Nothing To Search Here</h3>
+  </section>
+
+ 
+
+    
+    
+              
+	  <i class="fas fa-copyright" style="margin-left:60px; margin-top:40px">copyright MyTripGhana 2022 Created by Kalitex Creatives</i>   </body>
+  <!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+  
+            // Store hash
+            var hash = this.hash;
+  
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+</html>

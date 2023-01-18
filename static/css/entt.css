@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #094b65;
+  
+
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18vmin;
+  line-height: 20vmin;
+    
+
+}
+
+.gradient-text {
+  color: transparent;
+  background: conic-gradient(
+    #e55d87 12%, 
+   #59D06B 12%, #fff 33%, 
+    #1b86f9 33%, #d55e87 55%, 
+    #de9688 55%,  #de9688 70%, 
+    #fff 70%, #ffeba7 87%, 
+    #1b86f9 87%);
+  background-size: 50%;
+  background-clip: text;  
+  -webkit-background-clip: text;
+
+  animation: expand-rev 0.5s ease forwards;
+
+  cursor: pointer;
+}
+
+.gradient-text:hover {
+  animation: expand 0.5s ease forwards;
+}
+
+@keyframes expand {
+  0% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 325%;
+    background-position: -10em -4em;
+  }
+}
+
+@keyframes expand-rev {
+  0% {
+    background-size: 325%;
+    background-position: -10em -4em;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+}
+
+
+------------------------------
+
+
+:root {
+    --primary:#094b65;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #094b65;
+    min-height: 100vh;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#header .logo {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+    justify-content: space-between;
+       letter-spacing: 1px;
+}
+
+
+section #text {
+    position: absolute;
+    color: var(--primary);
+    font-size: 10vw;
+    text-align: center;
+    line-height: .55em;
+    font-family: 'Rancho', cursive;
+    transform: translatey(-50%);
+
+}
+
+section #text span {
+    font-size: .20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.status-share {
+ background-color: #1b86f9;
+ border: none;
+ color: #fff;
+ border-radius: 10px;
+ padding: 10px 20px;
+ width: 100px;
+ margin-left: 90px;
+ box-shadow: 0 0 5px #1b86f2;
+ cursor: pointer;
+ margin-left: 130px;
+}
+
+

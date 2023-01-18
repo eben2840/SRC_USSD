@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<header class="container">
+    <nav class="nav-fostrap">
+      <div class="logo">LOGO</div>
+      <ul class="ml-a">
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">Web Design</a>
+        </li>
+        <li>
+          <a href="">Blogger</a>
+        </li>
+        <li>
+          <a href="">SEO</a>
+        </li>
+        <li>
+          <a href="">Google Adsense</a>
+        </li>
+        <li>
+          <a href="">Advertising</a>
+        </li>
+        <li>
+          <a href="">Business</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="nav-bg-fostrap">
+      <div class="navbar-fostrap">xxx</div>
+      <a href="" class="title-mobile">Fostrap</a>
+    </div>
+  </header>
+  <div class="card-layer">
+    <div class="card-price">
+      <div class="card-title">Сheckout</div>
+      <div class="card-mid">
+        <div class="box-pay">
+          <div class="title o-5">Order number</div>
+          <div class="number">342 434</div>
+        </div>
+        <hr>
+        <div class="box-pay">
+          <div class="title">Amount of payment</div>
+          <div class="summa">5 000<span> $</span></div>
+        </div>
+        <hr>
+      </div>
+      <div class="card-footer">
+        <ul>
+          <li>A copy of the order will be sent to the specified phone number</li>
+          <li>Depending on the chosen payment method, payment system fees may be charged.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-pay">
+      <div class="card-head">
+        <div class="title">Select a Payment Method</div>
+        <div class="box-pay-method">
+          <button class="btn-method">
+            <i class="fa fa-cc-visa"></i>
+          </button>
+          <button class="btn-method">
+            <i class="fa fa-google-wallet"></i>
+          </button>
+          <button class="btn-method">
+            <i class="fa fa-paypal"></i>
+          </button>
+          <button class="btn-method">
+            <i class="fa fa-credit-card"></i>
+          </button>
+          <button class="btn-plus">
+            <i class="fa fa-plus-circle"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card-mid">
+        <div class="title">Your contacts:</div>
+        <input placeholder="Your name">
+        <input placeholder="Your e-mail">
+        <input placeholder="Your phone number" id="phone">
+        <button class="btn-pay">Pay order</button>
+      </div>
+      <div class="card-footer">
+        <a class="#">Terms of Service</a>
+        <a class="#">Technical support</a>
+      </div>
+    </div>
+  </div>
+{%endblock body%}
