@@ -177,7 +177,7 @@ def centralmall():
                       "Phone Number= " + src.phone
         )
         flash(src.phone +" " + "Congratulations, you just won airtime.","success")
-        return redirect("/centralmal")
+        return redirect("/menu")
     return render_template('about.html')
 
 
@@ -269,7 +269,7 @@ def shop():
                 sweat=form.sweat.data,
               bag=form.bag.data)
         db.session.add(src)
-        db.session.commit()
+        db.session.commit
         print(src.sweat)
         print(src.shirt)
         print(src.srcnumb)
@@ -418,9 +418,7 @@ def review():
                       "Name = " + src.reviewname  + '\n' + 
                       "Review = " + src.review)
         return redirect("/review")
-    persons=Review.query.order_by(Review.id.desc()).all()
-    print(persons)
-    return render_template('happy.html', persons=persons)
+    return render_template('happy.html')
 
 @app.route('/search',methods=['GET','POST'])
 def search():
@@ -481,6 +479,11 @@ def update(id):
 @app.route('/heads')
 def heads():
     return render_template("heads.html")
+
+@app.route('/delivery')
+def delivery():
+    return render_template("delivery.html")
+
 
 
 @app.route('/login', methods=["POST","GET"])
